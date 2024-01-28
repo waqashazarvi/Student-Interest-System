@@ -1,0 +1,270 @@
+16/01/2024 10:09:53 pm - User: mwaqas, Activity: User registered successfully
+16/01/2024 10:10:13 pm - User: mwaqas, Activity: User login successfully
+16/01/2024 10:10:41 pm - User: mwaqas12, Activity: User registered successfully
+16/01/2024 10:10:47 pm - User: mwaqas12, Activity: User login successfully
+16/01/2024 10:21:25 pm - User: waqas, Activity: User registered successfully
+16/01/2024 10:21:30 pm - User: waqas, Activity: User login successfully
+16/01/2024 10:30:26 pm - User: mwaqas, Activity: Invalid login attempt
+16/01/2024 10:30:53 pm - User: waqas, Activity: User already registered, invalid signup attempt
+16/01/2024 10:31:06 pm - User: waqas1, Activity: User registered successfully
+16/01/2024 10:31:10 pm - User: waqas1, Activity: User login successfully
+16/01/2024 10:32:05 pm - User: waqas1, Activity: Accessed all students successfully
+16/01/2024 10:32:11 pm - User: waqas1, Activity: Accessed Dashboard
+16/01/2024 10:41:11 pm - User: waqas1, Activity: User already registered, invalid signup attempt
+16/01/2024 10:43:28 pm - User: waqas1, Activity: User already registered, invalid signup attempt
+16/01/2024 10:46:03 pm - User: waqas2, Activity: User registered successfully
+16/01/2024 10:48:28 pm - User: waqas1, Activity: User already registered, invalid signup attempt
+16/01/2024 10:48:36 pm - User: ABC, Activity: User registered successfully
+16/01/2024 10:53:22 pm - User: waqas1, Activity: User login successfully
+16/01/2024 11:12:39 pm - User: waqas1, Activity: User login successfully
+16/01/2024 11:12:45 pm - User: waqas1, Activity: Logout from system
+16/01/2024 11:12:47 pm - User: waqas1, Activity: User login successfully
+16/01/2024 11:18:42 pm - User: waqas1, Activity: User login successfully
+16/01/2024 11:19:18 pm - User: waqas, Activity: User login successfully
+16/01/2024 11:22:30 pm - User: waqas, Activity: User login successfully
+16/01/2024 11:33:01 pm - User: waqas, Activity: User login successfully
+16/01/2024 11:36:37 pm - User: Anonymous, Activity: Attempted to access StudentForm without logging in
+16/01/2024 11:36:40 pm - User: waqas, Activity: User login successfully
+16/01/2024 11:38:58 pm - User: Anonymous, Activity: Attempted to access StudentForm without logging in
+16/01/2024 11:39:07 pm - User: Anonymous, Activity: Attempted to access StudentForm without logging in
+16/01/2024 11:39:18 pm - User: waqas, Activity: User login successfully
+16/01/2024 11:41:51 pm - User: waqas, Activity: User login successfully
+16/01/2024 11:41:57 pm - User: waqas, Activity: User login successfully
+16/01/2024 11:42:58 pm - User: waqas, Activity: User login successfully
+16/01/2024 11:43:00 pm - User: waqas, Activity: Accessed all students successfully
+16/01/2024 11:43:26 pm - User: waqas, Activity: Accessed Dashboard
+16/01/2024 11:45:39 pm - User: waqas, Activity: User login successfully
+16/01/2024 11:45:59 pm - User: waqas, Activity: Submitted StudentForm and student added successfully
+16/01/2024 11:46:07 pm - User: waqas, Activity: Logout from system
+16/01/2024 11:46:10 pm - User: waqas, Activity: User login successfully
+16/01/2024 11:46:12 pm - User: waqas, Activity: Accessed all students successfully
+16/01/2024 11:49:50 pm - User: Anonymous, Activity: Attempted to access all Students without logging in
+16/01/2024 11:50:01 pm - User: waqas, Activity: User login successfully
+16/01/2024 11:50:05 pm - User: waqas, Activity: Accessed all students successfully
+16/01/2024 11:50:12 pm - User: waqas, Activity: Accessed StudentForm
+16/01/2024 11:50:16 pm - User: waqas, Activity: Accessed all students successfully
+16/01/2024 11:50:40 pm - User: waqas, Activity: Logout from system
+16/01/2024 11:58:58 pm - User: waqas, Activity: User login successfully
+16/01/2024 11:59:01 pm - User: waqas, Activity: Accessed all students successfully
+17/01/2024 12:03:45 am - User: waqas, Activity: User login successfully
+17/01/2024 12:03:53 am - User: waqas, Activity: Accessed all students successfully
+17/01/2024 12:03:56 am - User: waqas, Activity: Viewed details of student with ID 1
+17/01/2024 12:04:08 am - User: waqas, Activity: Accessed all students successfully
+17/01/2024 12:04:14 am - User: waqas, Activity: Accessed Edit page for student with ID 1
+17/01/2024 12:04:20 am - User: waqas, Activity: Accessed StudentForm
+17/01/2024 12:04:23 am - User: waqas, Activity: Accessed all students successfully
+17/01/2024 12:04:25 am - User: Programming, Activity: Decremented by 1
+17/01/2024 12:04:25 am - User: waqas, Activity: Deleted student with ID 1
+17/01/2024 12:14:07 am - User: Anonymous, Activity: Attempted to delete student with ID 1 without logging in
+17/01/2024 12:14:10 am - User: waqas, Activity: User login successfully
+17/01/2024 12:14:14 am - User: waqas, Activity: Accessed all students successfully
+17/01/2024 12:14:19 am - User: waqas, Activity: Viewed details of student with ID 2
+17/01/2024 12:14:29 am - User: waqas, Activity: Accessed all students successfully
+17/01/2024 12:14:49 am - User: waqas, Activity: User login successfully
+17/01/2024 12:15:44 am - User: waqas, Activity: Submitted StudentForm and student added successfully
+17/01/2024 12:17:51 am - User: Anonymous, Activity: Attempted to access StudentForm without logging in
+17/01/2024 12:17:54 am - User: waqas, Activity: User login successfully
+17/01/2024 12:19:41 am - User: waqas, Activity: User login successfully
+17/01/2024 12:19:46 am - User: waqas, Activity: Logout from system
+17/01/2024 12:19:48 am - User: waqas, Activity: User login successfully
+17/01/2024 12:19:49 am - User: waqas, Activity: Accessed all students successfully
+17/01/2024 12:20:05 am - User: waqas, Activity: Accessed StudentForm
+17/01/2024 12:20:28 am - User: waqas, Activity: User login successfully
+17/01/2024 12:20:30 am - User: waqas, Activity: Accessed Dashboard
+17/01/2024 12:23:30 am - User: Anonymous, Activity: Attempted to access dashboard without logging in
+17/01/2024 12:27:16 am - User: Anonymous, Activity: Attempted to access dashboard without logging in
+17/01/2024 12:27:17 am - User: waqas, Activity: User login successfully
+17/01/2024 12:27:19 am - User: waqas, Activity: User login successfully
+17/01/2024 12:27:21 am - User: waqas, Activity: Accessed Dashboard
+17/01/2024 12:28:31 am - User: Anonymous, Activity: Attempted to access dashboard without logging in
+17/01/2024 12:28:36 am - User: waqas, Activity: User login successfully
+17/01/2024 12:28:39 am - User: waqas, Activity: Accessed Dashboard
+17/01/2024 12:30:20 am - User: Anonymous, Activity: Attempted to access dashboard without logging in
+17/01/2024 12:30:24 am - User: waqas, Activity: User login successfully
+17/01/2024 12:30:26 am - User: waqas, Activity: Accessed Dashboard
+17/01/2024 12:31:53 am - User: Anonymous, Activity: Attempted to access dashboard without logging in
+17/01/2024 12:32:17 am - User: waqas, Activity: User login successfully
+17/01/2024 12:32:19 am - User: waqas, Activity: Accessed Dashboard
+17/01/2024 12:33:29 am - User: Anonymous, Activity: Attempted to access dashboard without logging in
+17/01/2024 12:33:37 am - User: waqas, Activity: User login successfully
+17/01/2024 12:33:40 am - User: waqas, Activity: Accessed Dashboard
+17/01/2024 12:37:06 am - User: waqas, Activity: User login successfully
+17/01/2024 12:37:08 am - User: waqas, Activity: Accessed Dashboard
+17/01/2024 12:39:30 am - User: waqas, Activity: User login successfully
+17/01/2024 12:39:32 am - User: waqas, Activity: Accessed Dashboard
+17/01/2024 12:43:11 am - User: waqas, Activity: User login successfully
+17/01/2024 12:43:14 am - User: waqas, Activity: Accessed Dashboard
+17/01/2024 12:45:37 am - User: waqas, Activity: User login successfully
+17/01/2024 12:45:39 am - User: waqas, Activity: Accessed Dashboard
+17/01/2024 12:46:15 am - User: waqas, Activity: Accessed all students successfully
+17/01/2024 12:46:18 am - User: waqas, Activity: Accessed Dashboard
+17/01/2024 12:53:49 am - User: Anonymous, Activity: Attempted to access dashboard without logging in
+17/01/2024 12:54:11 am - User: waqas, Activity: User login successfully
+17/01/2024 12:54:13 am - User: waqas, Activity: Accessed Dashboard
+17/01/2024 12:55:02 am - User: Anonymous, Activity: Attempted to access dashboard without logging in
+17/01/2024 12:55:10 am - User: waqas, Activity: User login successfully
+17/01/2024 12:55:16 am - User: waqas, Activity: Accessed Dashboard
+17/01/2024 12:56:03 am - User: waqas, Activity: User login successfully
+17/01/2024 12:56:05 am - User: waqas, Activity: Accessed Dashboard
+17/01/2024 12:56:43 am - User: waqas, Activity: User login successfully
+17/01/2024 12:56:45 am - User: waqas, Activity: Accessed Dashboard
+17/01/2024 12:57:31 am - User: waqas, Activity: User login successfully
+17/01/2024 12:57:33 am - User: waqas, Activity: Accessed Dashboard
+17/01/2024 12:59:06 am - User: waqas, Activity: User login successfully
+17/01/2024 12:59:08 am - User: waqas, Activity: Accessed Dashboard
+17/01/2024 1:01:13 am - User: waqas, Activity: User login successfully
+17/01/2024 1:01:15 am - User: waqas, Activity: Accessed Dashboard
+17/01/2024 1:03:54 am - User: waqas, Activity: User login successfully
+17/01/2024 1:03:55 am - User: waqas, Activity: Accessed Dashboard
+17/01/2024 1:04:56 am - User: waqas, Activity: User login successfully
+17/01/2024 1:04:59 am - User: waqas, Activity: Accessed Dashboard
+17/01/2024 1:06:20 am - User: waqas, Activity: User login successfully
+17/01/2024 1:06:22 am - User: waqas, Activity: Accessed Dashboard
+17/01/2024 1:07:21 am - User: waqas, Activity: User login successfully
+17/01/2024 1:07:23 am - User: waqas, Activity: Accessed Dashboard
+17/01/2024 1:09:23 am - User: waqas, Activity: User login successfully
+17/01/2024 1:09:25 am - User: waqas, Activity: Accessed Dashboard
+17/01/2024 1:10:26 am - User: waqas, Activity: User login successfully
+17/01/2024 1:10:29 am - User: waqas, Activity: Accessed Dashboard
+17/01/2024 1:10:55 am - User: waqas, Activity: User login successfully
+17/01/2024 1:10:57 am - User: waqas, Activity: Accessed Dashboard
+17/01/2024 1:11:53 am - User: waqas, Activity: User login successfully
+17/01/2024 1:11:55 am - User: waqas, Activity: Accessed Dashboard
+17/01/2024 1:12:44 am - User: Anonymous, Activity: Attempted to access dashboard without logging in
+17/01/2024 1:12:49 am - User: waqas, Activity: User login successfully
+17/01/2024 1:12:52 am - User: waqas, Activity: Accessed Dashboard
+17/01/2024 1:13:18 am - User: waqas, Activity: User login successfully
+17/01/2024 1:13:19 am - User: waqas, Activity: Accessed Dashboard
+17/01/2024 1:13:44 am - User: waqas, Activity: User login successfully
+17/01/2024 1:13:45 am - User: waqas, Activity: Accessed Dashboard
+17/01/2024 1:15:55 am - User: waqas, Activity: User login successfully
+17/01/2024 1:15:57 am - User: waqas, Activity: Accessed Dashboard
+17/01/2024 1:17:13 am - User: Anonymous, Activity: Attempted to access dashboard without logging in
+17/01/2024 1:17:16 am - User: waqas, Activity: User login successfully
+17/01/2024 1:17:18 am - User: waqas, Activity: Accessed Dashboard
+17/01/2024 1:20:51 am - User: Anonymous, Activity: Attempted to access dashboard without logging in
+17/01/2024 1:20:53 am - User: waqas, Activity: User login successfully
+17/01/2024 1:20:56 am - User: waqas, Activity: Accessed Dashboard
+17/01/2024 1:22:00 am - User: waqas, Activity: User login successfully
+17/01/2024 1:22:02 am - User: waqas, Activity: Accessed Dashboard
+17/01/2024 1:22:57 am - User: waqas, Activity: User login successfully
+17/01/2024 1:22:59 am - User: waqas, Activity: Accessed Dashboard
+17/01/2024 1:25:03 am - User: waqas, Activity: User login successfully
+17/01/2024 1:25:05 am - User: waqas, Activity: Accessed Dashboard
+17/01/2024 1:26:10 am - User: waqas, Activity: User login successfully
+17/01/2024 1:26:11 am - User: waqas, Activity: Accessed Dashboard
+17/01/2024 1:30:21 am - User: Anonymous, Activity: Attempted to access dashboard without logging in
+17/01/2024 1:30:25 am - User: waqas, Activity: User login successfully
+17/01/2024 1:30:28 am - User: waqas, Activity: Accessed Dashboard
+17/01/2024 1:31:16 am - User: waqas, Activity: User login successfully
+17/01/2024 1:31:18 am - User: waqas, Activity: Accessed Dashboard
+17/01/2024 1:32:49 am - User: waqas, Activity: User login successfully
+17/01/2024 1:32:50 am - User: waqas, Activity: Accessed Dashboard
+17/01/2024 1:33:34 am - User: waqas, Activity: User login successfully
+17/01/2024 1:33:36 am - User: waqas, Activity: Accessed Dashboard
+17/01/2024 1:34:06 am - User: waqas, Activity: Accessed Dashboard
+17/01/2024 1:34:41 am - User: Anonymous, Activity: Attempted to access dashboard without logging in
+17/01/2024 1:34:43 am - User: waqas, Activity: User login successfully
+17/01/2024 1:34:45 am - User: waqas, Activity: Accessed Dashboard
+17/01/2024 1:35:22 am - User: waqas, Activity: User login successfully
+17/01/2024 1:35:23 am - User: waqas, Activity: Accessed Dashboard
+17/01/2024 1:35:49 am - User: waqas, Activity: User login successfully
+17/01/2024 1:35:51 am - User: waqas, Activity: Accessed Dashboard
+17/01/2024 1:36:37 am - User: waqas, Activity: User login successfully
+17/01/2024 1:36:39 am - User: waqas, Activity: Accessed Dashboard
+17/01/2024 1:37:53 am - User: waqas, Activity: User login successfully
+17/01/2024 1:37:54 am - User: waqas, Activity: Accessed Dashboard
+17/01/2024 1:39:41 am - User: waqas, Activity: User login successfully
+17/01/2024 1:39:43 am - User: waqas, Activity: Accessed Dashboard
+17/01/2024 1:41:40 am - User: Anonymous, Activity: Attempted to access dashboard without logging in
+17/01/2024 1:41:44 am - User: waqas, Activity: User login successfully
+17/01/2024 1:41:46 am - User: waqas, Activity: Accessed Dashboard
+17/01/2024 1:41:52 am - User: waqas, Activity: Accessed all students successfully
+17/01/2024 1:41:57 am - User: waqas, Activity: Logout from system
+17/01/2024 1:42:06 am - User: asad, Activity: User registered successfully
+17/01/2024 1:42:11 am - User: asad, Activity: User login successfully
+17/01/2024 1:42:18 am - User: asad, Activity: Accessed all students successfully
+17/01/2024 1:55:17 am - User: asad, Activity: User login successfully
+17/01/2024 1:55:19 am - User: asad, Activity: Accessed all students successfully
+17/01/2024 1:55:22 am - User: asad, Activity: Accessed Dashboard
+17/01/2024 1:55:27 am - User: asad, Activity: User login successfully
+17/01/2024 1:55:28 am - User: asad, Activity: Accessed all students successfully
+17/01/2024 1:55:53 am - User: asad, Activity: User login successfully
+17/01/2024 1:55:55 am - User: asad, Activity: Accessed all students successfully
+17/01/2024 1:55:58 am - User: asad, Activity: Accessed StudentForm
+17/01/2024 1:56:00 am - User: asad, Activity: Accessed all students successfully
+17/01/2024 1:56:02 am - User: asad, Activity: Accessed Dashboard
+17/01/2024 1:56:04 am - User: asad, Activity: Accessed StudentForm
+17/01/2024 2:10:49 am - User: asad, Activity: User login successfully
+17/01/2024 2:10:52 am - User: asad, Activity: Accessed all students successfully
+17/01/2024 2:10:54 am - User: asad, Activity: Accessed Dashboard
+17/01/2024 2:11:00 am - User: asad, Activity: Accessed all students successfully
+17/01/2024 2:11:05 am - User: asad, Activity: Accessed Edit page for student with ID 2
+17/01/2024 2:11:14 am - User: asad, Activity: Submitted StudentForm and student added successfully
+17/01/2024 2:13:06 am - User: Anonymous, Activity: Attempted to access StudentForm without logging in
+17/01/2024 2:13:08 am - User: asad, Activity: User login successfully
+17/01/2024 2:13:11 am - User: asad, Activity: Accessed all students successfully
+17/01/2024 2:13:16 am - User: asad, Activity: Accessed Edit page for student with ID 4
+17/01/2024 2:13:23 am - User: asad, Activity: Submitted StudentForm and student added successfully
+17/01/2024 2:18:02 am - User: Anonymous, Activity: Attempted to access StudentForm without logging in
+17/01/2024 2:18:07 am - User: Anonymous, Activity: Attempted to access StudentForm without logging in
+17/01/2024 2:18:09 am - User: asad, Activity: User login successfully
+17/01/2024 2:18:11 am - User: asad, Activity: Accessed all students successfully
+17/01/2024 2:18:15 am - User: asad, Activity: Viewed details of student with ID 4
+17/01/2024 2:18:18 am - User: asad, Activity: Accessed all students successfully
+17/01/2024 2:18:25 am - User: Programming, Activity: Decremented
+17/01/2024 2:18:25 am - User: asad, Activity: Deleted student with ID 5
+17/01/2024 2:19:35 am - User: asad, Activity: User login successfully
+17/01/2024 2:19:38 am - User: asad, Activity: Accessed all students successfully
+17/01/2024 2:19:43 am - User: asad, Activity: User login successfully
+17/01/2024 2:20:51 am - User: asad, Activity: User login successfully
+17/01/2024 2:21:07 am - User: asad, Activity: User login successfully
+17/01/2024 2:21:14 am - User: asad, Activity: Accessed all students successfully
+17/01/2024 2:23:10 am - User: asad, Activity: User login successfully
+17/01/2024 2:23:12 am - User: asad, Activity: Accessed all students successfully
+17/01/2024 2:23:18 am - User: asad, Activity: User login successfully
+17/01/2024 2:23:46 am - User: asad, Activity: User login successfully
+17/01/2024 2:23:51 am - User: asad, Activity: User login successfully
+17/01/2024 2:23:54 am - User: asad, Activity: Accessed all students successfully
+17/01/2024 2:24:00 am - User: asad, Activity: User login successfully
+17/01/2024 2:36:00 am - User: asad, Activity: User login successfully
+17/01/2024 2:36:03 am - User: asad, Activity: Accessed all students successfully
+17/01/2024 2:36:10 am - User: asad, Activity: User login successfully
+17/01/2024 2:36:13 am - User: asad, Activity: Accessed all students successfully
+17/01/2024 2:37:51 am - User: asad, Activity: User login successfully
+17/01/2024 2:37:53 am - User: asad, Activity: Accessed all students successfully
+17/01/2024 2:38:45 am - User: asad, Activity: User login successfully
+17/01/2024 2:38:48 am - User: asad, Activity: Accessed all students successfully
+17/01/2024 2:38:51 am - User: Programming, Activity: Decremented
+17/01/2024 2:38:51 am - User: asad, Activity: Deleted student with ID 2
+17/01/2024 8:44:35 am - User: asad, Activity: User login successfully
+17/01/2024 8:44:38 am - User: asad, Activity: Accessed all students successfully
+17/01/2024 8:44:43 am - User: Programming, Activity: Decremented
+17/01/2024 8:44:43 am - User: asad, Activity: Deleted student with ID 4
+17/01/2024 8:44:47 am - User: asad, Activity: Accessed Dashboard
+17/01/2024 8:45:12 am - User: asad, Activity: Accessed Edit page for student with ID 3
+17/01/2024 8:45:18 am - User: asad, Activity: Submitted StudentForm and student added successfully
+17/01/2024 8:45:44 am - User: asad, Activity: Accessed Dashboard
+17/01/2024 8:45:47 am - User: asad, Activity: Accessed all students successfully
+17/01/2024 8:45:50 am - User: asad, Activity: Logout from system
+17/01/2024 8:50:23 am - User: asad, Activity: User login successfully
+17/01/2024 8:50:26 am - User: asad, Activity: Accessed all students successfully
+17/01/2024 8:50:30 am - User: asad, Activity: Accessed Edit page for student with ID 6
+17/01/2024 8:50:48 am - User: asad, Activity: Submitted StudentForm and student added successfully
+17/01/2024 9:53:07 am - User: asad, Activity: User login successfully
+17/01/2024 9:53:11 am - User: asad, Activity: Accessed all students successfully
+17/01/2024 9:53:33 am - User: asad, Activity: Accessed Dashboard
+17/01/2024 9:53:41 am - User: asad, Activity: Accessed Edit page for student with ID 3
+17/01/2024 9:53:51 am - User: asad, Activity: Submitted StudentForm and student added successfully
+17/01/2024 9:57:27 am - User: Anonymous, Activity: Attempted to access StudentForm without logging in
+17/01/2024 9:57:34 am - User: asad, Activity: User login successfully
+17/01/2024 9:57:36 am - User: asad, Activity: Accessed all students successfully
+17/01/2024 10:13:34 am - User: Waqas123, Activity: User registered successfully
+17/01/2024 10:13:41 am - User: Waqas123, Activity: Invalid login attempt
+17/01/2024 10:13:47 am - User: Waqas123, Activity: User login successfully
+17/01/2024 10:15:34 am - User: Waqas123, Activity: Submitted StudentForm and student added successfully
+17/01/2024 10:15:59 am - User: Waqas123, Activity: Accessed StudentForm
+17/01/2024 10:16:19 am - User: Waqas123, Activity: Accessed all students successfully
+17/01/2024 10:16:24 am - User: Waqas123, Activity: Accessed Dashboard
+17/01/2024 10:34:40 am - User: Waqas123, Activity: User login successfully
+17/01/2024 10:39:05 am - User: Waqas123, Activity: Accessed all students successfully

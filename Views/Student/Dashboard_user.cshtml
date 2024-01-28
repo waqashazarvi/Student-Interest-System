@@ -1,0 +1,317 @@
+﻿@using Students_Interest_System.Models
+@model DashboardItems
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/lib/bootstrap/dist/css/bootstrap.rtl.min.css" rel="stylesheet" />
+    <link href="~/lib/bootstrap/dist/css/bootstrap.rtl.css" rel="stylesheet" />
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link href="~/css/site.css" rel="stylesheet" />
+    <title>Dashboard</title>
+</head>
+<body>
+
+   <div class="btn-container">
+        <a asp-action="AllStudents" class="btn btn-success">Student List</a>
+        <a asp-action="StudentForm" class="btn btn-success">Add Student</a>
+        <a href="@Url.Action("Logout", "Student")" class="btn btn-secondary">Logout</a>
+    </div>
+
+    <h1 class="text-center mb-4">Dashboard</h1>
+
+    <style>
+        .tile {
+            display: inline-block;
+            width: auto;
+            margin: 5px;
+            height: auto;
+            padding: 10px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+        .details-container {
+            margin-top: 20px;
+        }
+
+        .hours-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .hours-list li {
+            background-color: #fff;
+            color: #333;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        .custom-btn {
+            display: inline-block;
+            width: auto;
+            margin: 5px;
+            padding: 15px;
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+        h1 {
+            margin-top: 15px;
+            color: black;
+        }
+        
+       
+        .interests-container {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 15px 0;
+
+        }
+
+    </style>
+
+    
+
+    <style>
+        .chart-container {
+            display: inline-block;
+            width: 20%; /* Adjust the width as needed */
+        }
+    </style>
+
+    <div class="chart-container">
+        <h2>City Distribution</h2>
+        <canvas id="cityChart" width="150" height="150"></canvas>
+    </div>
+
+    <div class="chart-container">
+        <h2>Submission Chart</h2>
+        <canvas id="submissionChart" width="150" height="150"></canvas>
+    </div>
+
+    <div class="chart-container">
+        <h2>Age Distribution</h2>
+        <canvas id="ageChart" width="150" height="150"></canvas>
+    </div>
+
+    <div class="chart-container">
+        <h2>Department Distribution</h2>
+        <canvas id="departmentChart" width="150" height="150"></canvas>
+    </div>
+<hr />
+    <div class="chart-container">
+        <h2>Degree Distribution</h2>
+        <canvas id="degreeChart" width="150" height="150"></canvas>
+    </div>
+
+    <div class="chart-container">
+        <h2>Gender Distribution</h2>
+        <canvas id="genderChart" width="150" height="150"></canvas>
+    </div>
+
+    <div class="chart-container">
+        <h2>Last 30 Days Activity</h2>
+        <canvas id="last30DaysActivityChart" width="150" height="150"></canvas>
+    </div>
+    <div class="chart-container">
+        <h2>Last 24 Hours Activity</h2>
+        <canvas id="last24HoursActivityChart" width="150" height="150"></canvas>
+    </div>
+    <hr />
+    <div class="details-container">
+        <h2>Students Status Grid</h2>
+        @foreach (var status in Model.StudentsStatusGrid)
+        {
+            <div>@status.Key : @status.Value </div>  
+        }
+    </div>
+    <hr />
+    <lable>Top Interests: </label>
+    <div class="interests-container">
+        <
+        <ul class="hours-list">
+            @foreach (var interest in Model.TopInterests)
+            {
+                <li>@interest</li>
+            }
+        </ul>
+    </div>
+        <hr />
+    </h1>Bottom Interests: </label>
+    <div class="interests-container">
+        <ul class="hours-list">
+            @foreach (var interest in Model.BottomInterests)
+            {
+                <li>@interest</li>
+            }
+        </ul>
+    </div>
+        <hr />
+    <div class="interest-container">
+        <div>@Model.TotalInterests distinct Interests</div>
+    </div>
+        <hr />
+    <div class="details-container">
+        <h2>Most Active Hours in Last 30 Days</h2>
+        <ul class="hours-list">
+            @foreach (var hour in Model.MostActiveHours)
+            {
+                <li>@hour</li>
+            }
+        </ul>
+        </div><hr />
+
+    <div class="details-container">
+        <h2>Least Active Hours in Last 30 Days</h2>
+        <ul class="hours-list">
+            @foreach (var hour in Model.LeastActiveHours)
+            {
+                <li>@hour</li>
+            }
+        </ul>
+        </div><hr />
+    <div class="details-container">
+        <h2>Dead Hours in Last 30 Days</h2>
+        <ul class="hours-list">
+            @foreach (var hour in Model.DeadHours)
+            {
+                <li>@hour</li>
+            }
+        </ul>
+        </div><hr />
+    <script>
+        var cityData = @Html.Raw(Json.Serialize(Model.CityDistribution));
+        var cityChartCanvas = document.getElementById('cityChart').getContext('2d');
+        var cityChart = new Chart(cityChartCanvas, {
+            type: 'pie',
+            data: {
+                labels: Object.keys(cityData),
+                datasets: [{
+                    data: Object.values(cityData),
+                    backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56', '#4CAF50', '#FF5733'],
+                    // Change the colors above to your desired hex color codes
+                }]
+            }
+        });
+        // Submission Chart
+        var submissionData = @Html.Raw(Json.Serialize(Model.SubmissionChart));
+        var submissionChartCanvas = document.getElementById('submissionChart').getContext('2d');
+        var submissionChart = new Chart(submissionChartCanvas, {
+            type: 'line',
+            data: {
+                labels: Object.keys(submissionData),
+                datasets: [{
+                    label: 'Number of Students',
+                    data: Object.values(submissionData),
+                    borderColor: '#FF5733', // Change to your desired color
+                    fill: false,
+                }]
+            }
+        });
+
+        // Age Distribution
+        var ageData = @Html.Raw(Json.Serialize(Model.AgeDistribution));
+        var ageChartCanvas = document.getElementById('ageChart').getContext('2d');
+        var ageChart = new Chart(ageChartCanvas, {
+            type: 'bar',
+            data: {
+                labels: Object.keys(ageData),
+                datasets: [{
+                    label: 'Number of Students',
+                    data: Object.values(ageData),
+                    backgroundColor: '#4CAF50', // Change to your desired color
+                }]
+            }
+        });
+        // Department Distribution
+        var departmentData = @Html.Raw(Json.Serialize(Model.DepartmentDistribution));
+        var departmentChartCanvas = document.getElementById('departmentChart').getContext('2d');
+        // Define an array of colors for the chart
+        var departmentColors = ['#FF5733', '#4CAF50', '#2196F3', '#FFC107', '#E91E63'];
+        // Shuffle the colors array (optional)
+        departmentColors = departmentColors.sort(() => Math.random() - 0.5);
+        var departmentChart = new Chart(departmentChartCanvas, {
+            type: 'pie',
+            data: {
+                labels: Object.keys(departmentData),
+                datasets: [{
+                    data: Object.values(departmentData),
+                    backgroundColor: departmentColors,
+                }]
+            }
+        });
+        // Degree Distribution
+        var degreeData = @Html.Raw(Json.Serialize(Model.DegreeDistribution));
+        var degreeChartCanvas = document.getElementById('degreeChart').getContext('2d');
+        var degreeChart = new Chart(degreeChartCanvas, {
+            type: 'pie',
+            data: {
+                labels: Object.keys(degreeData),
+                datasets: [{
+                    data: Object.values(degreeData),
+                    backgroundColor: ['#FF5733', '#4CAF50', '#2196F3', '#FFC107', '#E91E63'],
+                }]
+            }
+        });
+        // Gender Distribution
+        var genderData = @Html.Raw(Json.Serialize(Model.GenderDistribution));
+        var genderChartCanvas = document.getElementById('genderChart').getContext('2d');
+        var genderChart = new Chart(genderChartCanvas, {
+            type: 'pie',
+            data: {
+                labels: Object.keys(genderData),
+                datasets: [{
+                    data: Object.values(genderData),
+                    backgroundColor: ['#FF5733', '#4CAF50', '#2196F3', '#FFC107', '#E91E63'],
+                }]
+            }
+        });
+        // Last 30 Days Activity Chart
+        var last30DaysActivityData = @Html.Raw(Json.Serialize(Model.Last30DaysActivity));
+        var last30DaysActivityChartCanvas = document.getElementById('last30DaysActivityChart').getContext('2d');
+        var last30DaysActivityChart = new Chart(last30DaysActivityChartCanvas, {
+            type: 'line',
+            data: {
+                labels: Object.keys(last30DaysActivityData),
+                datasets: [{
+                    label: 'Number of Actions',
+                    data: Object.values(last30DaysActivityData),
+                    borderColor: '#FF5733', // Change the color
+                    fill: false,
+                }]
+            }
+        });
+        // Last 24 Hours Activity Chart
+        var last24HoursActivityData = @Html.Raw(Json.Serialize(Model.Last24HoursActivity));
+        var last24HoursActivityChartCanvas = document.getElementById('last24HoursActivityChart').getContext('2d');
+        var last24HoursActivityChart = new Chart(last24HoursActivityChartCanvas, {
+            type: 'line',
+            data: {
+                labels: Object.keys(last24HoursActivityData),
+                datasets: [{
+                    label: 'Number of Actions',
+                    data: Object.values(last24HoursActivityData),
+                    borderColor: '#FF5733', // Change the color
+                    fill: false,
+                }]
+            }
+        });
+        document.querySelectorAll('.chart-container canvas').forEach(function (canvas) {
+            canvas.style.width = '90%';
+            canvas.style.height = 'auto';
+        });
+    </script>
+</body>
+</html>

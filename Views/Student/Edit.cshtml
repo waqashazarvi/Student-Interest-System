@@ -1,0 +1,136 @@
+﻿@model Students_Interest_System.Models.Items
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="~/lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/lib/bootstrap/dist/css/bootstrap.rtl.min.css" rel="stylesheet" />
+    <link href="~/lib/bootstrap/dist/css/bootstrap.rtl.css" rel="stylesheet" />
+    <link href="~/lib/bootstrap/dist/css/bootstrap.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-datepicker@1.9.0/dist/css/bootstrap-datepicker.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-datepicker@1.9.0/dist/js/bootstrap-datepicker.min.js"></script>
+
+
+    <link href="~/css/site.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Student</title>
+</head>
+<body>
+    <h1>Student Interests System</h1>
+    <div>
+        <a asp-action="Dashboard" class="btn btn-info">Dashboard</a>
+        <a asp-action="AllStudents" class="btn btn-success">Student List</a>
+        <a href="@Url.Action("Logout", "Student")">Logout</a>
+
+    </div>
+    <section class="container">
+
+        <h1 class="text-center mb-4">Adding Student</h1>
+        <form class="box" action="/Student/StudentForm" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="@Model.student.Name" class="control-label"></label>
+                <input asp-for="@Model.student.Name" class="form-control" />
+                <span asp-validation-for="@Model.student.Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.student.RollNo" class="control-label"></label>
+                <input asp-for="@Model.student.RollNo" class="form-control" />
+                <span asp-validation-for="@Model.student.RollNo" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.student.Email" class="control-label"></label>
+                <input asp-for="@Model.student.Email" class="form-control" />
+                <span asp-validation-for="@Model.student.Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.student.Gender" class="control-label"></label>
+                <select asp-for="@Model.student.Gender" class="form-control">
+                    <option value="">Select Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+                <span asp-validation-for="@Model.student.Gender" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label class="form-label" for="DOB"> Date of Birth </label><br />
+                <input class="form-control date-picker" asp-for="@Model.student.DOB" autocomplete="off" required /><br />
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.student.City" class="control-label"></label>
+                <input asp-for="@Model.student.City" class="form-control" />
+                <span asp-validation-for="@Model.student.City" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.student.Department" class="control-label"></label>
+                <select asp-for="@Model.student.Department" class="form-control">
+                    <option value="">Select Department</option>
+                    <option value="IT">Information Technology (IT)</option>
+                    <option value="CS">Computer Science (CS)</option>
+                    <option value="SE">Software Engineering (SE)</option>
+                    <option value="DS">Data Science (DS)</option>
+                </select>
+                <span asp-validation-for="@Model.student.Department" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label" for="Interest"> Interest </label><br />
+                <input class="form-control" list="List" asp-for="@Model.student.Interest" placeholder="Select your interest" required /><br />
+                <datalist id="List">
+                    @foreach (var interest in Model.Interests)
+                    {
+                        <option value="@interest">@interest</option>
+                    }
+                </datalist>
+            </div>
+
+
+            <div class="form-group">
+                <label asp-for="@Model.student.Degree" class="control-label"></label>
+                <select asp-for="@Model.student.Degree" class="form-control">
+                    <option value="">Select Degree Title</option>
+                    <option value="AssociateDegree">Associate degree</option>
+                    <option value="BachelorsDegree">Bachelor's degree</option>
+                    <option value="MPhillDegree">M Phill Degree</option>
+                    <option value="PostgraduateDiploma">Postgraduate diploma</option>
+                    <option value="Doctorate">Doctorate</option>
+                    <option value="PostDoctorate">Post Doctorate</option>
+                </select>
+                <span asp-validation-for="@Model.student.Degree" class="text-danger"></span>
+            </div>
+
+
+            <div class="form-group">
+                <label asp-for="@Model.student.Subject" class="control-label"></label>
+                <input asp-for="@Model.student.Subject" class="form-control" />
+                <span asp-validation-for="@Model.student.Subject" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label class="form-label" for="Start"> Start Date </label><br />
+                <input class="form-control date-picker" asp-for="@Model.student.Start" autocomplete="off" required />
+            </div>
+
+            <div class="form-group">
+                <label class="form-label" for="End"> End Date </label><br />
+                <input class="form-control date-picker" asp-for="@Model.student.End" autocomplete="off" required />
+            </div>
+            <input class="btn btn-dark" type="submit" value="Update" />
+            <button class="btn btn-dark" type="button" onclick="cancelButtonClick()">Cancel</button>
+
+        </form>
+    </section>
+
+    <script>
+
+        function cancelButtonClick() {
+            window.location.href = '/Student/AllStudents';
+        }
+
+    </script>
+
+</body>
+</html>
+
